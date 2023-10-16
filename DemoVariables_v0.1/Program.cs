@@ -27,6 +27,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("Kursas: " + courseCode);
             Console.WriteLine("Studijų programos pavadinimas: " + studyProgramName);
             Console.WriteLine("Atsiskaitytų kreditų skaičius: " + numberOfSettledCredits);
+
             Console.ReadLine();
         }
     }

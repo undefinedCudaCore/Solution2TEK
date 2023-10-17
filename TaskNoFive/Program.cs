@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //Console.OutputEncoding = Encoding.UTF8;
+        Console.OutputEncoding = Encoding.UTF8;
         //Console.WriteLine("1 užduotis");
         //Console.WriteLine();
         //Console.WriteLine("Įveskite pirmąjį skaičių:");
@@ -39,6 +39,7 @@ internal class Program
         //Console.WriteLine($"Įvesto skaičiaus kvadratinė reikšmė: {one}");
         //Console.WriteLine($"Įvestas skaičiaus 3 laipsniu: {two}");
 
+        //Console.WriteLine();
         //Console.WriteLine("3 užduotis");
         //Console.WriteLine();
 
@@ -48,6 +49,7 @@ internal class Program
 
         //Console.WriteLine($"3jų skaičių sandauga: {convertedFirstNumber} * {convertedSecondNumber} * {convertedThirdNumber2} = {multiplicationTwo}");
 
+        //Console.WriteLine();
         //Console.WriteLine("4 užduotis");
         //Console.WriteLine();
 
@@ -57,18 +59,33 @@ internal class Program
 
         Console.WriteLine($"Turite gauti: {firstAnswer}, {secondAnswer}, {thirdAnswer}");
 
+        Console.WriteLine();
         Console.WriteLine("5 užduotis");
         Console.WriteLine();
 
         Console.WriteLine("Įveskite ketvirtąjį skaičių:");
 
         string fourthNumber = Console.ReadLine();
-        int convertedFourthNumber = Convert.ToInt32( fourthNumber );
+        int convertedFourthNumber = Convert.ToInt32(fourthNumber);
 
         for (int i = 0; i < 10; i++)
         {
             int multiplicationThree = convertedFourthNumber * i;
             Console.WriteLine($"{convertedFourthNumber} * {i} = {multiplicationThree}");
         }
+
+        Console.WriteLine();
+        Console.WriteLine("6 užduotis");
+        Console.WriteLine();
+        Console.WriteLine("Įveskite dviženklį skaičių:");
+
+        string fifthNumber = Console.ReadLine();
+        int convertedFifthNumber = Convert.ToInt32(fifthNumber);
+
+        int firstNumberForMultiplication = convertedFifthNumber / 10;
+        int secondNumberForMultiplication = convertedFifthNumber % 10;
+        int multiplicationFour = firstNumberForMultiplication * secondNumberForMultiplication;
+
+        Console.WriteLine($"Atsakymas: {firstNumberForMultiplication} * {secondNumberForMultiplication} = {multiplicationFour}");
     }
 }

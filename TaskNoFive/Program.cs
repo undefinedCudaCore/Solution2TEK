@@ -5,53 +5,53 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.OutputEncoding = Encoding.UTF8;
-        //Console.WriteLine("1 užduotis");
-        //Console.WriteLine();
-        //Console.WriteLine("Įveskite pirmąjį skaičių:");
+        Console.WriteLine("1 užduotis");
+        Console.WriteLine();
+        Console.WriteLine("Įveskite pirmąjį skaičių:");
 
-        //string firstNumber = Console.ReadLine();
+        string firstNumber = Console.ReadLine();
 
-        //Console.WriteLine("Įveskite antrąjį skaičių:");
+        Console.WriteLine("Įveskite antrąjį skaičių:");
 
-        //string secondNumber = Console.ReadLine();
+        string secondNumber = Console.ReadLine();
 
-        //int convertedFirstNumber = Convert.ToInt32(firstNumber);
-        //int convertedSecondNumber = Convert.ToInt32(secondNumber);
-        //int addition = convertedFirstNumber + convertedSecondNumber;
-        //int subtraction = convertedFirstNumber - convertedSecondNumber;
-        //int multiplication = convertedFirstNumber * convertedSecondNumber;
-        //int division = convertedFirstNumber / convertedSecondNumber;
+        int convertedFirstNumber = Convert.ToInt32(firstNumber);
+        int convertedSecondNumber = Convert.ToInt32(secondNumber);
+        int addition = convertedFirstNumber + convertedSecondNumber;
+        int subtraction = convertedFirstNumber - convertedSecondNumber;
+        int multiplication = convertedFirstNumber * convertedSecondNumber;
+        int division = convertedFirstNumber / convertedSecondNumber;
 
-        //Console.WriteLine($"Įvestų skaičių suma: {firstNumber} + {secondNumber} = {addition}");
-        //Console.WriteLine($"Įvestų skaičių skirtumas: {firstNumber} - {secondNumber} = {subtraction}");
-        //Console.WriteLine($"Įvestų skaičių sandauga: {firstNumber} * {secondNumber} = {multiplication}");
-        //Console.WriteLine($"Įvestų skaičių dalmuo: {firstNumber} / {secondNumber} = {division}");
+        Console.WriteLine($"Įvestų skaičių suma: {firstNumber} + {secondNumber} = {addition}");
+        Console.WriteLine($"Įvestų skaičių skirtumas: {firstNumber} - {secondNumber} = {subtraction}");
+        Console.WriteLine($"Įvestų skaičių sandauga: {firstNumber} * {secondNumber} = {multiplication}");
+        Console.WriteLine($"Įvestų skaičių dalmuo: {firstNumber} / {secondNumber} = {division}");
 
-        //Console.WriteLine();
-        //Console.WriteLine("2 užduotis");
-        //Console.WriteLine("Įveskite trečiąjį skaičių:");
+        Console.WriteLine();
+        Console.WriteLine("2 užduotis");
+        Console.WriteLine("Įveskite trečiąjį skaičių:");
 
-        //string thirdNumber = Console.ReadLine();
-        //double convertedThirdNumber = Convert.ToDouble(thirdNumber);
-        //double one = Math.Sqrt(convertedThirdNumber);
-        //double two = Math.Pow(convertedThirdNumber, 3);
+        string thirdNumber = Console.ReadLine();
+        double convertedThirdNumber = Convert.ToDouble(thirdNumber);
+        double one = Math.Sqrt(convertedThirdNumber);
+        double two = Math.Pow(convertedThirdNumber, 3);
 
-        //Console.WriteLine($"Įvesto skaičiaus kvadratinė reikšmė: {one}");
-        //Console.WriteLine($"Įvestas skaičiaus 3 laipsniu: {two}");
+        Console.WriteLine($"Įvesto skaičiaus kvadratinė reikšmė: {one}");
+        Console.WriteLine($"Įvestas skaičiaus 3 laipsniu: {two}");
 
-        //Console.WriteLine();
-        //Console.WriteLine("3 užduotis");
-        //Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("3 užduotis");
+        Console.WriteLine();
 
-        //int convertedThirdNumber2 = Convert.ToInt32(convertedThirdNumber);
-        //int multiplicationTwo = convertedFirstNumber * convertedSecondNumber * convertedThirdNumber2;
+        int convertedThirdNumber2 = Convert.ToInt32(convertedThirdNumber);
+        int multiplicationTwo = convertedFirstNumber * convertedSecondNumber * convertedThirdNumber2;
 
 
-        //Console.WriteLine($"3jų skaičių sandauga: {convertedFirstNumber} * {convertedSecondNumber} * {convertedThirdNumber2} = {multiplicationTwo}");
+        Console.WriteLine($"3jų skaičių sandauga: {convertedFirstNumber} * {convertedSecondNumber} * {convertedThirdNumber2} = {multiplicationTwo}");
 
-        //Console.WriteLine();
-        //Console.WriteLine("4 užduotis");
-        //Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("4 užduotis");
+        Console.WriteLine();
 
         double firstAnswer = -1 + 4 * 6;
         double secondAnswer = 14 + -4 * 6 / 11;

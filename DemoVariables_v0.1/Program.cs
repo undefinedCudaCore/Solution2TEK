@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -6,6 +7,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             string name = "Tomas";
             string surename = "Grikis";
             int age = 25;

@@ -10,5 +10,11 @@ internal class Program
         Mokinys mokinys = new Mokinys("a", "b", 2, 2, pazymiai1);
 
         mokinys.isvestiInfoApieMokini();
+
+        List<int> pazymiai2 = new List<int>() { 5, 7, 10, 8, 10 };
+        Mokinys mokinysTomas = new Mokinys("Tomas", "Klaukys", 15, 9, pazymiai1);
+
+        mokinysTomas.isvestiInfoApieMokini();
+
     }
 }

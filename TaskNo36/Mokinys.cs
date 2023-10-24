@@ -12,8 +12,7 @@ namespace TaskNo36
         public string pavarde;
         public int amzius;
         public int klase;
-
-        List<int> pazymiuSarasas = new List<int>(5);
+        public List<int> pazymiuSarasas = new List<int>(5);
 
         public Mokinys(string vardas, string pavarde, int amzius, int klase, List<int> pazymiuSarasas)
         {
@@ -25,6 +24,7 @@ namespace TaskNo36
 
         }
 
+        // Information display method
         public void isvestiInfoApieMokini()
         {
             Console.WriteLine($"Vasdas: {vardas}, pavarde: {pavarde}, amzius {amzius}, klase {klase}.");

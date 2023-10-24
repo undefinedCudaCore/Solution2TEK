@@ -35,6 +35,11 @@ internal class Program
 
         mokinysTadas.isvestiInfoApieMokini();
 
+        //Show how much yers of study left for each student
+        mokinys.uzKiekMetuBaigsMokykla();
+        mokinysTomas.uzKiekMetuBaigsMokykla();
+        mokinysEmilia.uzKiekMetuBaigsMokykla();
+        mokinysTadas.uzKiekMetuBaigsMokykla();
 
     }
 }

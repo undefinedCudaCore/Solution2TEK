@@ -31,5 +31,22 @@ namespace TaskNo36
             Console.WriteLine($"Pažymiai: {pazymiuSarasas[0]}, {pazymiuSarasas[1]}, {pazymiuSarasas[2]}, {pazymiuSarasas[3]}, {pazymiuSarasas[4]}. ");
             Console.WriteLine();
         }
+        public void uzKiekMetuBaigsMokykla()
+        {
+            int kiekLikoMetuMokytis = 12 - klase;
+
+            if (kiekLikoMetuMokytis == 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Mokinys mokyklą baigs šiais metais.");
+                Console.WriteLine();
+            }
+            else 
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Po {kiekLikoMetuMokytis} metų  mokinys baigs mokyklą");
+                Console.WriteLine();
+            }
+        }
     }
 }

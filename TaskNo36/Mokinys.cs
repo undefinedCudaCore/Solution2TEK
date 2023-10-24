@@ -27,8 +27,9 @@ namespace TaskNo36
         // Information display method
         public void isvestiInfoApieMokini()
         {
-            Console.WriteLine($"Vasdas: {vardas}, pavarde: {pavarde}, amzius {amzius}, klase {klase}.");
-            Console.WriteLine($"Pazymiai: {pazymiuSarasas[0]}, {pazymiuSarasas[1]}, {pazymiuSarasas[2]}, {pazymiuSarasas[3]}, {pazymiuSarasas[4]}. ");
+            Console.WriteLine($"Vardas: {vardas}, pavardė: {pavarde}, amžius {amzius}, klasė {klase}.");
+            Console.WriteLine($"Pažymiai: {pazymiuSarasas[0]}, {pazymiuSarasas[1]}, {pazymiuSarasas[2]}, {pazymiuSarasas[3]}, {pazymiuSarasas[4]}. ");
+            Console.WriteLine();
         }
     }
 }

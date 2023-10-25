@@ -49,6 +49,28 @@ internal class Program
         Console.WriteLine($"Geriausias mokinio {mokinysTadas.vardas} pažimys yra {mokinysTadas.pazymiuSarasas.Max()}, o blogiausias yra {mokinysTadas.pazymiuSarasas.Min()}");
         Console.WriteLine($"Geriausias mokinio {mokinysTomas.vardas} pažimys yra {mokinysTomas.pazymiuSarasas.Max()}, o blogiausias yra {mokinysTomas.pazymiuSarasas.Min()}");
 
+        //Show number of grade > 4 for each person
+        Console.WriteLine();
+        kiekMokynioPazymiuDidesniuUzKeturis(mokinys);
+        kiekMokynioPazymiuDidesniuUzKeturis(mokinysTomas);
+        kiekMokynioPazymiuDidesniuUzKeturis(mokinysEmilia);
+        kiekMokynioPazymiuDidesniuUzKeturis(mokinysTadas);
+    }
 
+    public static void kiekMokynioPazymiuDidesniuUzKeturis(Mokinys mokinys)
+    {
+        int count = 0;
+
+
+
+        foreach (var item in mokinys.pazymiuSarasas)
+        {
+            if (item < 4)
+            {
+                count++;
+            }
+
+        }
+        Console.WriteLine($"Pažymių skaičius mažesnių už 4 - mokinys {mokinys.vardas} - {count}.");
     }
 }

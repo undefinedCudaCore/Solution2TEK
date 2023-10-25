@@ -16,6 +16,7 @@ namespace TaskNo37
 
         public List<int> Augimas = new List<int>();
 
+        public int[] values = {55, 555, 35, 478};
         public Salis()  
         {
 
@@ -52,6 +53,21 @@ namespace TaskNo37
             for (int i = 0; i < Augimas.Count; i++)
             {
                 Console.WriteLine($"202{i} metais gime {Augimas[i]}");
+            }
+        }
+        public void showElementFromArray(int arrayElementPosition)
+        {
+            int showValue1 = 0;
+            int showValue2 = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                showValue1 = values[arrayElementPosition];
+                showValue2 = values[1 + arrayElementPosition];
+            }
+            Console.WriteLine(showValue1);
+            if (showValue1 > showValue2)
+            {
+                Console.WriteLine(showValue2);
             }
         }
     }

@@ -61,8 +61,6 @@ internal class Program
     {
         int count = 0;
 
-
-
         foreach (var item in mokinys.pazymiuSarasas)
         {
             if (item < 4)

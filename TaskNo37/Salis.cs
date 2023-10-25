@@ -8,13 +8,18 @@ namespace TaskNo37
 {
     internal class Salis
     {
-        public string Pavadinimas;
-        public string Prezidentas;
-        public double Plotas;
-        public int GyventojųSkaicius;
-        public double VidutinisAtlyginimas;
+        public string Pavadinimas { get; set; }
+        public string Prezidentas { get; set; }
+        public double Plotas { get; set; }
+        public int GyventojųSkaicius { get; set; }
+        public double VidutinisAtlyginimas { get; set; }
+
         public List<int> Augimas = new List<int>();
 
+        public Salis()  
+        {
+
+        }
         public Salis(string pavadinimas, string prezidentas)
         {
             Pavadinimas = pavadinimas;
@@ -34,5 +39,20 @@ namespace TaskNo37
             Augimas = augimas;
         }
 
+        public void isvestiSaliesInfo()
+        {
+            Console.WriteLine($"Šalies info:");
+            Console.WriteLine($"Pavadinimas: {Pavadinimas};");
+            Console.WriteLine($"Prezidetnas: {Prezidentas};");
+            Console.WriteLine($"Plotas: {Plotas};");
+            Console.WriteLine($"Gyventojų skaicius: {GyventojųSkaicius};");
+            Console.WriteLine($"Vidutinis atlyginimas: {VidutinisAtlyginimas};");
+
+            Console.WriteLine($"Gimstamumo augimas:");
+            for (int i = 0; i < Augimas.Count; i++)
+            {
+                Console.WriteLine($"202{i} metais gime {Augimas[i]}");
+            }
+        }
     }
 }

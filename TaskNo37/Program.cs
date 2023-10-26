@@ -70,5 +70,7 @@ internal class Program
         Console.WriteLine();
         int enterNumber = Convert.ToInt32(Console.ReadLine());
         salis.showElementFromArray(enterNumber);
+
+        
     }
 }

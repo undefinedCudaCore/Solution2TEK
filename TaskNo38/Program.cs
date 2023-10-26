@@ -14,7 +14,7 @@ namespace TaskNo38
 
             Gyvate boa = new Gyvate("Gyvate", "Boa", "Ruda", 0.45, 2.36);
 
-            boa.gyvunoInformacija();
+            boa.GyvunoInformacija();
 
             Console.ReadKey();
         }

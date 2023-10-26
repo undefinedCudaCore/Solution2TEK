@@ -12,9 +12,9 @@ namespace TaskNo38_1
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            Gyvate boa = new Gyvate("Gyvate", "Boa", "Ruda", 0.45, 2.36);
+            Gyvate2cs boa = new Gyvate2cs("Gyvate", "ABoa", "Ruda", 1.45, 2.46);
 
-            boa.gyvunoInformacija();
+            boa.GyvunoInformacija();
 
             Console.ReadKey();
         }

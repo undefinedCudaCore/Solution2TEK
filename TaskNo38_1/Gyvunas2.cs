@@ -14,6 +14,8 @@ namespace TaskNo38_1
         protected double Aukstis { get; set; }
         protected double Ilgis { get; set; }
 
+        private const string PrivatiConstanta = "Gyvuno vardas yra Džekas!";
+
         public Gyvunas2(string pavadinimas, string rusis, string spalva, double aukstis, double ilgis)
         {
             Pavadinimas = pavadinimas;
@@ -21,6 +23,14 @@ namespace TaskNo38_1
             Spalva = spalva;
             Aukstis = aukstis;
             Ilgis = ilgis;
+        }
+        public virtual void GyvunoInformacija()
+        {
+            Console.WriteLine("Nera gyvuno.");
+        }
+        public static void IsvestiConstanta()
+        {
+            Console.WriteLine(PrivatiConstanta);
         }
     }
 }
